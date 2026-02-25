@@ -1,0 +1,35 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    min-width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.changing-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    height: 400px;
+    width: 600px;
+    border-radius: 36px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hvr-button{
+    background-color: black;
+    color: whitesmoke;
+    padding: 16px;
+    min-width: 200px;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+}
