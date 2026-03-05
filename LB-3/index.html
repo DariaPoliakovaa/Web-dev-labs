@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>ЛБ №3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>ЛР3</h1>
+
+<section>
+    <h2>1. Сума чисел Фібоначчі</h2>
+    <button onclick="fibSum()">Обчислити</button>
+    <p id="fibResult"></p>
+</section>
+
+<section>
+    <h2>2. Сума простих чисел до 1000</h2>
+    <button onclick="primeSum()">Обчислити</button>
+    <p id="primeResult"></p>
+</section>
+
+<section>
+    <h2>3. День тижня</h2>
+    <input type="number" id="dayInput" placeholder="Введіть число 1-7">
+    <button onclick="getDay()">Показати день</button>
+    <p id="dayResult"></p>
+</section>
+
+<section>
+    <h2>4. Рядки з непарною довжиною (з "miffy", "me", "slay", "JavaScript")</h2>
+    <button onclick="oddStrings()">Показати результат</button>
+    <p id="stringResult"></p>
+</section>
+
+<section>
+    <h2>5. Збільшити числа на 1</h2>
+    <button onclick="increaseNumbers()">Показати</button>
+    <p id="increaseResult"></p>
+</section>
+
+<section>
+    <h2>6. Перевірка суми або різниці = 10</h2>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <button onclick="checkNumbers()">Перевірити</button>
+    <p id="checkResult"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
