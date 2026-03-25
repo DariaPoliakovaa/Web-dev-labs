@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>ЛБ №5</title>
+</head>
+
+<body>
+<h1>ЛР5</h1>
+<div class="main">
+<div class="task">
+    <img id="lamp" src="images/normal.png" class="off">
+    <br><br>
+    <div class="buttonsCnt">
+        <button id="toggle" onclick="toggleLamp()">Включити / Виключити</button>
+        <button id="chooseLamp"  onclick="chooseLamp()">Вибрати тип лампочки</button>
+        <button id="brightness" onclick="changeBrightness()">Змінити яскравість</button>
+    </div>
+    
+</div>
+<div class="task">
+    <div class="traffic">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+    <br>
+    <div class="buttonsCnt">
+        <button id="trafficSwitch" onclick="manualSwitch()">Наступний стан</button>
+        <button id="trafficTime" onclick="changeTimes()">Змінити час</button>
+        <p id="stateText"></p>
+    </div>
+</div>
+
+<div class="task-vertical">
+    <h2>1. Цифровий годинник</h2>
+    <div class="clock" id="clock"></div>
+
+    <h2>2. Таймер зворотного відліку</h2>
+    <input type="datetime-local" id="targetTime">
+    <button id="timer" onclick="startTimer()">Запустити</button>
+    <p id="countdown"></p>
+
+    <h2>3. Календар</h2>
+    <input type="month" id="monthInput">
+    <p id="calendarResult"></p>
+
+    <h2>4. День народження</h2>
+    <input type="datetime-local" id="birthday">
+    <button id="bday" onclick="birthdayTimer()">Порахувати</button>
+    <p id="birthdayResult"></p>
+
+</div>
+
+<div class="task">
+
+   <div class="shop-zone">
+    <h3>Додати продукт</h3>
+    <input id="name" placeholder="Назва">
+    <input id="price" type="number" placeholder="Ціна">
+    <input id="quantity" type="number" placeholder="Кількість">
+    <button class="shop-btn" onclick="addProduct()">Додати</button>
+   </div>
+
+   <div class="shop-zone">
+    <h3>Оновити продукт</h3>
+    <input id="updateId" placeholder="ID">
+    <input id="newPrice" type="number" placeholder="Нова ціна">
+    <input id="newQuantity" type="number" placeholder="Нова кількість">
+    <button class="shop-btn" onclick="updateProduct()">Оновити</button>
+   </div>
+
+   <div class="shop-zone">
+    <h3>Видалити продукт</h3>
+    <input id="deleteId" placeholder="ID">
+    <button class="shop-btn" onclick="deleteProduct()">Видалити</button>
+   </div>
+
+   <div class="shop-zone">
+    <h3>Пошук продукту</h3>
+    <input id="searchName" placeholder="Назва">
+    <button class="shop-btn" onclick="searchProduct()">Знайти</button>
+   </div>
+
+   <div class="shop-zone">
+    <h3>Замовлення</h3>
+    <input id="orderId" placeholder="ID продукту">
+    <input id="orderQty" type="number" placeholder="Кількість">
+    <button class="shop-btn" onclick="makeOrder()">Замовити</button>
+   </div>
+
+   <div class="shop-zone">
+    <h3>Каталог</h3>
+    <button class="shop-btn" onclick="showAllProducts()">Показати всі продукти</button>
+    <div id="output"></div>
+   </div>
+
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
