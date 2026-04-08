@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 
 *{
 box-sizing:border-box;
@@ -14,7 +13,6 @@ padding:20px;
 line-height:1.4;
 }
 
-/* ===== HEADER ===== */
 
 header{
 display:flex;
@@ -37,7 +35,6 @@ font-weight:bold;
 color:#2e7d32;
 }
 
-/* ===== FILTERS ===== */
 
 #filters{
 display:flex;
@@ -61,7 +58,6 @@ background:#6366f1;
 color:white;
 }
 
-/* ===== SORTING ===== */
 
 #sorting{
 display:flex;
@@ -84,7 +80,6 @@ background:#334155;
 color:white;
 }
 
-/* ===== ADD BUTTON ===== */
 
 #addProductBtn{
 margin-top:20px;
@@ -103,7 +98,6 @@ background:#4f46e5;
 transform:scale(1.05);
 }
 
-/* ===== PRODUCTS GRID ===== */
 
 #productsContainer{
 display:grid;
@@ -111,7 +105,6 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-/* ===== PRODUCT CARD ===== */
 
 .card{
 background:white;
@@ -129,7 +122,6 @@ transform:translateY(-6px);
 box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ===== PRODUCT IMAGE ===== */
 
 .card img{
 width:100%;
@@ -137,7 +129,6 @@ height:180px;
 object-fit:cover;
 }
 
-/* ===== CARD CONTENT ===== */
 
 .card-content{
 padding:15px;
@@ -161,7 +152,6 @@ color:#16a34a;
 margin-top:10px;
 }
 
-/* ===== CARD BUTTONS ===== */
 
 .card-buttons{
 display:flex;
@@ -197,7 +187,6 @@ color:white;
 background:#2563eb;
 }
 
-/* ===== MODAL ===== */
 
 .modal{
 display:none;
@@ -247,7 +236,6 @@ background:#6366f1;
 color:white;
 }
 
-/* ===== TOAST / SNACKBAR ===== */
 
 #toast{
 position:fixed;
@@ -269,7 +257,6 @@ opacity:1;
 transform:translateY(0);
 }
 
-/* ===== ANIMATIONS ===== */
 
 @keyframes fadeIn{
 from{
@@ -293,7 +280,6 @@ opacity:1;
 }
 }
 
-/* ===== EMPTY MESSAGE ===== */
 
 #emptyMessage{
 text-align:center;
@@ -302,7 +288,6 @@ margin:40px 0;
 color:#666;
 }
 
-/* ===== RESPONSIVE ===== */
 
 @media (max-width:600px){
 

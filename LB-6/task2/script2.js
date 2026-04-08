@@ -9,7 +9,6 @@ const sortUpdated = document.getElementById("sortUpdated")
 const sortStatus = document.getElementById("sortStatus")
 const resetSort = document.getElementById("resetSort")
 
-// PURE FUNCTIONS
 const createTask = text => ({
   id: Date.now(),
   text,
@@ -30,7 +29,6 @@ const updateTask = (task,newText) => ({
   updatedAt: new Date()
 })
 
-// RENDER
 const renderTasks = () => {
   list.innerHTML=""
 
@@ -46,7 +44,6 @@ const renderTasks = () => {
     li.className="task"
     if(task.completed) li.classList.add("completed")
 
-    // чекбокс для статусу
     const checkbox = document.createElement("input")
     checkbox.type="checkbox"
     checkbox.checked = task.completed
@@ -101,7 +98,6 @@ const renderTasks = () => {
   })
 }
 
-// ADD TASK
 form.addEventListener("submit", e=>{
   e.preventDefault()
   const text = input.value.trim()
@@ -111,7 +107,6 @@ form.addEventListener("submit", e=>{
   renderTasks()
 })
 
-// SORTING
 sortCreated.onclick=()=>{
   tasks=[...tasks].sort((a,b)=>a.createdAt-b.createdAt)
   renderTasks()
