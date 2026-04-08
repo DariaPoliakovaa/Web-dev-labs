@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Список товарів</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<header>
+<h1>Список товарів</h1>
+<div id="totalPrice">Загальна вартість: 0 ₴</div>
+</header>
+
+<section id="filters">
+<button data-category="all">Всі</button>
+<button data-category="electronics">Electronics</button>
+<button data-category="clothes">Clothes</button>
+<button data-category="food">Food</button>
+</section>
+
+<section id="sorting">
+<button id="sortPrice">Сортувати за ціною</button>
+<button id="sortCreated">Сортувати за датою створення</button>
+<button id="sortUpdated">Сортувати за датою оновлення</button>
+<button id="resetSort">Скинути сортування</button>
+</section>
+
+<main>
+
+<p id="emptyMessage">
+Наразі список товарів пустий. Додайте новий товар.
+</p>
+
+<div id="productsContainer"></div>
+
+<button id="addProductBtn">
+Додати новий товар
+</button>
+
+</main>
+
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Товар</h2>
+
+<form id="productForm">
+
+<input type="text" id="name" placeholder="Назва товару" required>
+
+<input type="number" id="price" placeholder="Ціна" required min="0">
+
+<select id="category" required>
+<option value="electronics">Electronics</option>
+<option value="clothes">Clothes</option>
+<option value="food">Food</option>
+</select>
+
+<input type="url" id="image" placeholder="URL зображення" required>
+
+<button type="submit">Зберегти</button>
+
+<button type="button" id="closeModal">Закрити</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>

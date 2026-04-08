@@ -16,7 +16,7 @@ function resetTimer(){
         lamp.classList.remove("on");
         lamp.classList.add("off");
         alert("Лампочка автоматично вимкнулась");
-    },10000);
+    },20000);
 }
 
 function toggleLamp(){
