@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Pair Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="info"></h2>
+ <h3 id="timer"></h3>
+<div class="main-container">
+
+ <div class="settings">
+  <div>
+    Rows: <input id="rows" type="number" value="4" min="4">
+  Columns: <input id="cols" type="number" value="4" min="4">
+  </div>
+  
+
+  Difficulty
+  <select id="difficulty">
+    <option value="180">Easy</option>
+    <option value="120">Normal</option>
+    <option value="60">Hard</option>
+  </select>
+
+  Players
+  <select id="players">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+
+  Rounds
+  <input id="rounds" type="number" value="1" min="1">
+
+  <br><br>
+
+  First player <input id="p1" value="Player 1">
+  Second player <input id="p2" value="Player 2">
+
+  <br><br>
+
+  <div>
+      <button id="start">Start</button>
+  <button id="reset">Reset</button>
+  </div>
+
+ </div>
+
+
+
+ <div id="game" class="grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
