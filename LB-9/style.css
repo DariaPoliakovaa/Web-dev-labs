@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.container {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.tabs {
+    display: flex;
+}
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: #eef2f5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+.tab-btn.active {
+    background: #fff;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+.form-content {
+    display: none;
+    padding: 30px;
+}
+.form-content.active {
+    display: block;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+}
+.form-group input.valid, .form-group select.valid {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+.form-group input.invalid, .form-group select.invalid {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+.error-msg {
+    color: #dc3545;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    min-height: 14px;
+}
+.password-wrapper {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.submit-btn:hover {
+    background: #0056b3;
+}
+.success-msg-main {
+    color: #28a745;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
